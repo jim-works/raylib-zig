@@ -129,6 +129,8 @@ Find the folder where it's installed and run
 
 once that is finished, the exported project should be located at `zig-out/htmlout`
 
+Note: due to a [Zig bug](https://github.com/ziglang/zig/issues/19072), you will have to use `c_allocator` when exporting for web to avoid crashes.
+
 ### When is the binding updated?
 
 I plan on updating it every mayor release (2.5, 3.0, etc.). Keep in mind these are technically header files, so any
